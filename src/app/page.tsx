@@ -1,11 +1,7 @@
 'use client';
 
-import {Button} from "@/components/ui/button";
 import {useRouter} from "next/navigation";
 import Link from "next/link";
-import ClubIcon from "@/components/club/ClubIcon";
-import {ThemeProvider} from "@/components/ui/theme-provider";
-import {ModeToggle} from "@/components/ui/mode-toggle";
 
 export default function LandingPage() {
     const router = useRouter();

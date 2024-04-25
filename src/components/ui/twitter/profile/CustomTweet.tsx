@@ -28,7 +28,7 @@ const data  = {
 export const CustomTweet: React.FC<TweetProps> = ({ tweetId }) => {
     return (
         <div>
-            <Tweet id="1783416493213909466" data={data} />
+            <Tweet id="1783416493213909466" />
         </div>
     );
 };
