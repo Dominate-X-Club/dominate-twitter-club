@@ -26,12 +26,12 @@ export default function RootLayout({
 
         <div className="flex flex-col min-h-[100dvh]">
 
-            <ThemeProvider
-                attribute="class"
-                defaultTheme="system"
-                enableSystem
-                disableTransitionOnChange
-            >
+            {/*<ThemeProvider*/}
+            {/*    attribute="class"*/}
+            {/*    defaultTheme="system"*/}
+            {/*    enableSystem*/}
+            {/*    disableTransitionOnChange*/}
+            {/*>*/}
                 <header
                     className="sticky top-0 z-10 flex h-16 w-full items-center
                      justify-between bg-white px-4 shadow-sm dark:bg-gray-950 md:px-6">
@@ -65,7 +65,7 @@ export default function RootLayout({
                         </Link>
                     </nav>
                 </footer>
-            </ThemeProvider>
+            {/*</ThemeProvider>*/}
 
         </div>
         </body>
