@@ -1,9 +1,8 @@
 "use client"
 
 import * as React from "react"
-import Link from "next/link"
 
-import { cn } from "@/lib/utils"
+import {cn} from "@/lib/utils"
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -11,11 +10,9 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger,
-    navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import ClubIcon from "@/components/club/ClubIcon";
-import {router} from "next/client";
-import {useRouter} from "next/router";
+import ClassOf24Icon from "@/components/classOf24/ClassOf24Icon";
 
 const resources: { title: string; href: string; description: string }[] = [
     {
@@ -74,13 +71,13 @@ export function LandingNav() {
     return (
         <NavigationMenu>
             <NavigationMenuList>
-                <NavigationMenuItem>
-                    <Link href="/" legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()} >
-                            Home
-                        </NavigationMenuLink>
-                    </Link>
-                </NavigationMenuItem>
+                {/*<NavigationMenuItem>*/}
+                {/*    <Link href="/" legacyBehavior passHref>*/}
+                {/*        <NavigationMenuLink className={navigationMenuTriggerStyle()} >*/}
+                {/*            Home*/}
+                {/*        </NavigationMenuLink>*/}
+                {/*    </Link>*/}
+                {/*</NavigationMenuItem>*/}
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>#ClassOf24</NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -91,7 +88,7 @@ export function LandingNav() {
                                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                                         href="/classOf24"
                                     >
-                                        <ClubIcon/>
+                                        <ClassOf24Icon/>
                                         <div className="mb-2 mt-4 text-lg font-medium">
                                             #ClassOf24
                                         </div>
